@@ -42,7 +42,7 @@ func main() {
 			}
 		}
 
-		if (!skip) {
+		if !skip {
 			values := strings.Join(parts[1:], "")
 			variables[key] = values
 		}
