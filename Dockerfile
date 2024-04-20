@@ -7,7 +7,7 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN GOOS=linux CGO_ENABLED=0 GOARCH=amd64 go build -o /dist/server ./main.go
+RUN GOOS=linux CGO_ENABLED=0 go build -o /dist/server ./main.go
 
 FROM alpine:edge
 
